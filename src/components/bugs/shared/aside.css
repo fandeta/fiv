@@ -1,0 +1,113 @@
+button.toggle {
+  height: calc(100% - 180px);
+  position: fixed;
+  padding: 15px 0px 15px 15px;
+  width: 250px;
+  transform: translateY(50%);
+  bottom: 50%;
+  margin-left: 10px;
+  border: none;
+  transition-duration: .3s;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+button.toggle svg {
+  position: absolute;
+  right: -25px;
+  font-size: 30px;
+  color: var(--main-color);
+  transition-duration: .3s;;
+  cursor: pointer;
+}
+button.toggle svg.open {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+aside::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
+aside::-webkit-scrollbar-track,
+aside::-webkit-scrollbar-thumb {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+aside {
+  height: calc(100% - 180px);
+  position: fixed;
+  overflow-y: auto;
+  background-color: white;
+  padding: 15px 0px 15px 15px;
+  width: 250px;
+  box-shadow: 4px 4px 10px 1px #aba7a7b5;
+  transform: translateY(50%);
+  bottom: 50%;
+  border-radius: 7px;
+  margin-left: 10px;
+  transition-duration: .3s;
+  z-index: 1000;
+  left: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+div.overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color:transparent;
+}
+div.overlay.show {
+  z-index: 7;
+  background-color: #00000047;
+}
+
+aside.hidden,
+button.toggle.hidden {
+  transform: translateY(50%)translateX(-260px);
+  -webkit-transform: translateY(50%)translateX(-260px);
+  -moz-transform: translateY(50%)translateX(-260px);
+  -ms-transform: translateY(50%)translateX(-260px);
+  -o-transform: translateY(50%)translateX(-260px);
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+}
+aside ul li {
+  margin: 0 0 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 3px;
+  font-family: normal-font;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 17px;
+  color: #777;
+  transition-duration: .3s;
+}
+aside ul li:hover,
+aside ul li.active {
+  border-left: 4px solid var(--main-color);
+  padding-left: 10px;
+  color: black;
+  font-weight: bolder;
+}
+
+aside ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,117 @@
+footer {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--white-color);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  font-family: 'normal-font';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Shared  */
+footer a {
+  display: block;
+  font-size: 28px;
+  transition-duration: .3s;
+}
+footer a:hover{
+  transform: translateY(-7px);
+  -webkit-transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+  -ms-transform: translateY(-7px);
+  -o-transform: translateY(-7px);
+  color: var(--main-color);
+}
+footer a:not(:last-child) {
+  border-right: 1px solid var(--white-color-ddd);
+  padding-right: 10px;
+  margin-right: 10px;
+}
+footer .fiv-updates {
+  padding: 10px 0 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+/* Designing every element Isolated */
+
+footer .fiv-updates .title h4 span,
+footer .fiv-developer .title h4 span {
+  color: var(--main-color);
+  font-family: "special-font";
+  font-size: 25px;
+}
+footer .fiv-updates .title h4{
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: 'heading-font';;
+}
+footer .fiv-updates .links,
+footer .fiv-developer .links{
+  display: flex;
+  justify-content: center;
+}
+footer .fiv-developer .title h4{
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: 'heading-font';;
+}
+footer .fiv-developer .links {
+  margin-top: 7px;
+}
+
+footer .last-msg{
+  margin: 15px 0;
+  font-size: 21px;
+  font-family: 'heading-font';
+  letter-spacing: 1px;
+}
+footer .last-msg h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13.5px;
+}
+footer .last-msg h5 svg {
+  margin: 0 5px;
+  color:red;
+  font-size: 1.5em;
+}
+footer .last-msg h5 span {
+  padding-left: 5px;
+  color: var(--main-color);
+  font-family: "special-font";
+  font-size: 1.5em;
+}
+/* Responsive */
+
+@media (max-width:767px) {
+  footer .fiv-updates .title h4 {
+    font-size: 12px;
+    text-align: center;
+  }
+  footer a {
+    font-size: 24px
+  }
+  footer a:not(:last-child) {
+    padding-right: 5px;
+    margin-right: 5px;
+  }
+  footer .fiv-developer .title h4 {
+    font-size: 12px;
+    text-align: center;
+  }
+  footer .last-msg {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  footer .last-msg h5 {
+    font-size: 11px
+  }
+}

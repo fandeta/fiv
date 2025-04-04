@@ -1,0 +1,98 @@
+@font-face {
+  font-family: normal-font;
+  src: url("fonts/normal-poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: heading-boldonse;
+  src: url("fonts/heading-boldonse/Boldonse-Regular.ttf");
+}
+
+code {
+  margin: 12px 5px 12px 0;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+article {
+  background-color: var(--white-color);
+  padding: 15px;
+}
+
+.bug-definition h4 ~ div, .when-happens div, .risks-impact div, .real-exploitation div, .fix-prevent div, .conclusion-resources div, .good-bye div {
+  font-family: "normal-font";
+}
+
+
+.bug-definition h4, .when-happens h4, .risks-impact h4, .real-exploitation h4, .fix-prevent h4, .conclusion-resources h4, .good-bye h4{
+  margin: 10px 0 25px;
+  font-size: 22px;
+  font-family: 'heading-boldonse';
+}
+
+.bug-definition h4 ~ div, .when-happens div, .risks-impact div, .real-exploitation div, .fix-prevent div, .conclusion-resources div, .good-bye div{
+  font-family: normal-font;
+  font-size: 18px;
+}
+
+.bug-definition h4 ~ div ul, .risks-impact div ul, .when-happens div ul, .real-exploitation div ul, .fix-prevent div ul, .conclusion-resources div ul, .good-bye div ul{
+  margin: 7px 0 10px 50px;
+}
+
+.bug-definition h4 ~ div li, .when-happens div ul li, .risks-impact div ul li, .real-exploitation div ul li, .fix-prevent div ul li, .conclusion-resources div ul li, .good-bye div ul li{
+  list-style: initial;
+  margin-bottom: 5px;
+}
+
+ul li code,
+ul li ul li code {
+  padding-bottom: 17px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+ul li ul li code {
+  padding: 17px !important;
+}
+
+.when-happens h4, .risks-impact h4, .real-exploitation h4, .fix-prevent h4, .conclusion-resources h4, .good-bye h4 {
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 2px solid #ddd;
+}
+div.fix-prevent > div > ul > li:nth-child(2) > ul > li > pre > code {
+  margin-top: 10px !important;
+  padding-top: 0px !important;
+}
+
+/* Responsive In Small Screens */
+
+@media (max-width:767px) {
+  pre code.hljs {
+    padding: 10px;
+  }
+  .bug-definition h4 ~ div, .when-happens div, .risks-impact div, .real-exploitation div, .fix-prevent div, .conclusion-resources div, .good-bye div,
+  .bug-definition h4, .when-happens h4, .risks-impact h4, .real-exploitation h4, .fix-prevent h4, .conclusion-resources h4, .good-bye h4  {
+    font-size: 15px;
+  }
+  article *{
+    font-size: 15.5px;
+  }
+  .bug-definition h4 ~ div ul, .risks-impact div ul, .when-happens div ul, .real-exploitation div ul, .fix-prevent div ul, .conclusion-resources div ul, .good-bye div ul{
+    margin:7px 0 10px 25px;
+  }
+}
+
+span.highlighted {
+  padding: 1px 3px;
+  border-radius: 3px;
+  background-color: #777;
+  color: white;
+  margin: 0 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}

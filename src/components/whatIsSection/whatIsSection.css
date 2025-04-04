@@ -1,0 +1,63 @@
+section.what-is-fiv .questions {
+  display: flex;
+  flex-direction: column;
+  gap: 11px
+}
+section.what-is-fiv .questions .question{
+  display: flex;
+  justify-content: start;
+  background-color: white;
+  padding: 20px;
+  border-radius: 17px;
+  box-shadow: 0 0 10px 10px #DDD;
+  flex-direction: column;
+  font-family: normal-font;
+  transition-duration: .3s;
+}
+section.what-is-fiv .questions .question div{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: .3s;
+
+}
+section.what-is-fiv .questions .question div svg{
+  font-size: 30px;
+  color: var(--main-color);
+  margin-right: 12px;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+section.what-is-fiv .questions .question div p{
+  font-weight: 900;
+  font-size: 22px;
+}
+section.what-is-fiv .questions .question div + p{
+  transition-duration: .3s;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #777;
+  font-size: 19px;
+  line-height: 1.4;
+}
+
+section.what-is-fiv .hidden {
+  display: none;
+}
+section.what-is-fiv .show {
+  display: block;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  section.what-is-fiv .questions .question div p{
+    font-size: 18px;
+  }
+  section.what-is-fiv .questions .question div svg {
+    font-size: 25px;
+  }
+  section.what-is-fiv .questions .question div + p {
+    font-size: 17px;
+  }
+}

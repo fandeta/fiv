@@ -1,0 +1,47 @@
+
+h2.section-title {
+  text-align: center;
+  font-family: heading-font;
+  font-size: 25px;
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  transition-duration: .3s;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--main-color);
+  cursor: default;
+}
+
+h2.section-title:hover{
+  color: var(--main-color);
+}
+h2.section-title svg {
+  position: absolute;
+  top: -20px;
+  color: var(--main-color);
+}
+h2.section-title svg:first-child {
+  left: -35px;
+}
+h2.section-title svg:last-child {
+  right: -31px; 
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+  h2.section-title {
+    font-size: 18px;
+  }
+  h2.section-title svg{
+    top: -10px
+  }
+  h2.section-title svg:first-child {
+    left: -27px;
+  }
+  h2.section-title svg:last-child {
+    right: -27px; 
+  }
+}

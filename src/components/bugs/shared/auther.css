@@ -1,0 +1,113 @@
+
+div.auther  {
+  background-color: white;
+  padding: 10px 10px 20px;
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+}
+div.auther  > h3{
+  text-align: center;
+  margin: 20px auto;
+  padding-bottom: 8px;
+  font-size: 23px;
+  font-family: 'heading-font';
+  width: fit-content;
+}
+div.auther > h3 span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+div.auther .arthur-info {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  width: calc(100% - 40px);
+  margin: 35px auto 0;
+}
+div.auther .image{
+  display: flex;
+  align-items: center;
+}
+div.auther .image img{
+  width: 45px;
+  margin-right: 20px;
+  border: 1px #ddd solid;
+  border-radius: 50%;
+  padding: 2px;
+}
+div.auther .info h6{
+  font-size: 15px;
+  margin-bottom: 2px;
+  font-family: 'heading-font';
+  font-weight: normal;
+}
+div.auther .info p{
+  font-family: 'normal-font';
+  color: #777;
+  font-size: 14px;
+}
+div.auther .like-follow{
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: calc(100% - 40px);
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.auther .like-follow svg {
+  cursor: pointer;
+}
+div.auther .like-follow > div svg:first-child{
+  font-size: 26px;
+}
+div.auther .like-follow > div svg:first-child.like {
+  color: var(--main-color);
+}
+div.auther .like-follow > div svg:not(:first-child){
+  font-size: 24px;
+  margin-left: 7px;
+}
+
+div.auther .like-follow > div svg:not(:first-child).fa-circle-check {
+  color: var(--main-color);
+}
+
+div.auther .like-follow > div + svg:last-child{ /*Share Button*/
+  font-size: 25px;
+  color: var(--main-color);
+}
+
+/* Responsive */
+
+
+@media (max-width:767px) {
+  div.auther > h3 {
+    margin: 7px auto;
+    font-size: 16.5px;
+  }
+  div.auther .info h6 {
+    font-size: 12px;
+  }
+  div.auther .arthur-info {
+    width: calc(100% - 20px);
+  }
+  div.auther .like-follow {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 15px auto;
+  }
+  div.auther .like-follow > div svg:first-child,
+  div.auther .like-follow > div + svg:last-child {
+    font-size: 22px;
+  }
+  div.auther .like-follow > div svg:not(:first-child) {
+    font-size: 21px;
+  }
+}

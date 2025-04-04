@@ -1,0 +1,52 @@
+button.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 100;
+  transition-duration: .3s;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+button.scroll-top svg {
+  transition-duration: .3s;
+}
+button.scroll-top:hover  {
+  box-shadow: 0 0 10px var(--main-color);
+}
+button.scroll-top:hover svg {
+  animation: up .5s linear infinite;
+  -webkit-animation: up .5s linear infinite;
+}
+@keyframes up {
+  0% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+}
+  50% {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+  }
+}

@@ -1,0 +1,102 @@
+/* Design header.article-header */
+header.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 0 10px #ddd;
+  margin: 10px 0 20px;
+}
+header.article-header .links ul { 
+  display: flex;
+  justify-content: space-around;
+}
+header.article-header .links ul li{ 
+  font-family: heading-font;
+  margin-left: 10px;
+  padding: 7px;
+  font-size: 13px;
+  transition-duration: .3s;
+  clip-path: polygon(0% 0.5em, 0.5em 0, 100% 0, 100% calc(100% - 0.5em), calc(100% - 0.5em) 100%, 0 100%);
+}
+header.article-header .links ul li a{
+  color: inherit;
+}
+
+header.article-header .links ul li.active, 
+header.article-header .links ul li:hover{ 
+  background-color: var(--main-color);
+  color: white;
+}
+
+header.article-header .article-name {
+  font-family: 'heading-font';
+}
+header.article-header .article-name h2{
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--main-color);
+}
+header.article-header .logo { 
+  position: relative;
+  transition-duration: .3s;
+}
+header.article-header .logo h4 { 
+  font-family: special-font;
+  margin: 0;
+  font-size: 40px;
+  color: var(--main-color);
+  padding-left: 13px;
+  cursor: pointer;
+}
+
+header.article-header .logo p{ 
+  opacity: 0;
+  font-size: 11px;
+  font-family: heading-font;
+  position: absolute;
+  background-color: var(--main-color);
+  color: #ffffff;
+  padding: 7px;
+  border-radius: 7px;
+  width: 165px;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  left: 80%;
+  transition-duration: .3s;
+  user-select: none;
+  clip-path: polygon(0% 0.5em,0.5em 0, 100% 0, 100% calc(100% - 0.5em), calc(100% - 0.5em) 100%, 0 100%);
+}
+
+header.article-header .logo:hover p {
+  opacity: 1;
+  left: 125%;
+  user-select: initial;
+}
+
+/* Responsive Header */
+
+@media (max-width:767px) {
+  header.article-header .logo h4 {
+    font-size: 33px;
+    padding-left: 0
+  }
+  header.article-header .article-name h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    display: none;
+  }
+  header.article-header .logo p {
+    display: none;
+  }
+  header.article-header .links ul li {
+    font-size: 9.5px;
+    margin-left: 0;
+    padding: 8px;
+  }
+}

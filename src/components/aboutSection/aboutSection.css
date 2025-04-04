@@ -1,0 +1,97 @@
+section.about {
+  padding-top: 40px;
+}
+section.about .cards{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  font-family: normal-font;
+}
+
+section.about .cards .card {
+  position: relative;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  
+}
+section.about .card .num {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: var(--main-color);
+  top: -20%;
+  z-index: -1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 30px;
+  left: -14%;
+  left: -55px;
+}
+section.about .card .num span{
+  font-size: 58px;
+  color: var(--white-color);
+  font-weight: bold;
+  padding-left: 20px;
+  margin-top: -5px;
+  font-family: 'heading-font';
+}
+section.about .card .info{
+  height: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+section.about .card .info h3{
+  margin: 5px 0px 15px;
+  font-family: 'heading-font';
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+section.about .card .info p {
+  color: #777;
+  font-weight: 300;
+  font-size: 16.5px;
+  text-align: left;
+  padding: 0 15px;
+}
+section.about .card .info p span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+/* Responsive In Small Screens */
+
+@media (max-width:767px) {
+  section.about .cards {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+ 
+  section.about .card .num {
+    width: 75px;
+    height: 75px;
+    top: -17%;
+    border-radius: 15px;
+    left: -46px;
+  }
+  section.about .card .num span {
+    font-size: 45px;
+  }
+  section.about .card .info {
+    height: 100%;
+    padding: 15px 6px;
+  }
+  section.about .card .info p {
+    font-size: 14px;
+  }
+  section.about .card .info h3 {
+    font-size: 14.5px;
+  }
+}
