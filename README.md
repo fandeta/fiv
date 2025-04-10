@@ -1,8 +1,9 @@
 # 🔐 FIV (Fandeta Is Vulnerable)
+*# Simulating web vulnerabilities for ethical hacking education.*  
 
-*An open-source project to learn web vulnerabilities through articles and hands-on labs.*  
+
+*An open-source project to learn web vulnerabilities through articles and hands-on labs.* 
 **Live Demo**: 🌐 [fandeta.github.io/fiv](https://fandeta.github.io/fiv)  
-
 
 ---
 
